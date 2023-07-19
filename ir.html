@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Поисковая система по локальным HTML файлам (Java, Lucene)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Поисковая система по локальным HTML файлам (Java, Lucene)</h1>
+    <h2>Задание</h2>
+    <p>Целью данного проекта было создание простого поисковика по локальным HTML файлам, используя Java и библиотеку
+        Apache Lucene.</p>
+    <details>
+        <summary>Подробнее</summary>
+        <blockquote>
+            <p>Program your own (command-line based) Information Retrieval system using <em>Apache
+                    Lucene version 7.1.0</em> and <em>Java</em>. Lucene is an open source search library that provides
+                standard functionality for analyzing, indexing, and searching text-based documents. The
+                following criteria have to be met by your Information Retrieval system. Your program
+                should ...</p>
+            <ul>
+                <li>Using Lucene, parse and index <em>HTML</em> documents that a given folder and its
+                    subfolders contain. List all parsed files.</li>
+                <li>Consider the English language and use a stemmer for it (e.g. Porter Stemmer).</li>
+                <li>Select an available search index or create a new one (if not available in the chosen
+                    directory).</li>
+                <li>Make possible for the user to choose the ranking model, Vector Space Model (<em>VS</em>)
+                    or Okapi BM25 (<em>OK</em>).</li>
+                <li>Print a ranked list of relevant articles given a search query. The output should
+                    contain 10 most relevant documents with their rank, title and summary, relevance
+                    score and path.</li>
+                <li>Search multiple fields concurrently (<em>multifield search</em>): not only search the
+                    document's text (body tag), but also its title.</li>
+            </ul>
+            <p>The program must run without any corrections or modifications of the runtime
+                environment (<em>Java 8</em>) or source code! Create a jar-file named IR_P01.jar. It should
+                process the input:</p>
+            <p><code>java -jar IR_P01.jar [path to document folder] [path to index folder] [VS/OK] [query]</code></p>
+        </blockquote>
+
+    </details>
+
+    <h2>Результат выполнения</h2>
+    <ul>
+        <li>Исходный код: <a href="https://github.com/a2135/ir/tree/main/src" target="_blank">github</a></li>
+        <li>Краткий отчет: <a
+                href="https://www.dropbox.com/s/c1i2lcvd7ky0ibs/ir_documentation.pdf?dl=0">ir_documentation.pdf</a></li>
+        <li>jar-файл: <a href="https://www.dropbox.com/s/w7xks51gx1s0uxd/IR_P01.jar?dl=0">IR_P01.jar</a></li>
+    </ul>
+</body>
+
+</html>

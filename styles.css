@@ -1,0 +1,46 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: #fff;
+    /*padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;*/
+    height: 100vh;
+    line-height: 1.5em;
+}
+
+h1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+li {
+    /*margin-bottom: 10px;*/
+    line-height: 1.5em;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
