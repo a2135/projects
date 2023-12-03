@@ -6,6 +6,7 @@
     <title>Information Retrieval System (Java, Lucene)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -20,40 +21,47 @@
         </header>
         <main>
             <h1>Information Retrieval System (Java, Lucene)</h1>
-    <h2>Task</h2>
-        <blockquote>
-            <p>Program your own (command-line based) Information Retrieval system using <em>Apache
-                    Lucene version 7.1.0</em> and <em>Java</em>. Lucene is an open source search library that provides
-                standard functionality for analyzing, indexing, and searching text-based documents. The
-                following criteria have to be met by your Information Retrieval system. Your program
-                should ...</p>
+            <br>
+            <h2>Task:</h2>
+            <br>
+            <blockquote>
+                <p>Program your own (command-line based) Information Retrieval system using <em>Apache
+                        Lucene version 7.1.0</em> and <em>Java</em>. Lucene is an open source search library that
+                    provides
+                    standard functionality for analyzing, indexing, and searching text-based documents. The
+                    following criteria have to be met by your Information Retrieval system. Your program
+                    should ...</p>
+                <ul>
+                    <li>Using Lucene, parse and index <em>HTML</em> documents that a given folder and its
+                        subfolders contain. List all parsed files.</li>
+                    <li>Consider the English language and use a stemmer for it (e.g. Porter Stemmer).</li>
+                    <li>Select an available search index or create a new one (if not available in the chosen
+                        directory).</li>
+                    <li>Make possible for the user to choose the ranking model, Vector Space Model (<em>VS</em>)
+                        or Okapi BM25 (<em>OK</em>).</li>
+                    <li>Print a ranked list of relevant articles given a search query. The output should
+                        contain 10 most relevant documents with their rank, title and summary, relevance
+                        score and path.</li>
+                    <li>Search multiple fields concurrently (<em>multifield search</em>): not only search the
+                        document's text (body tag), but also its title.</li>
+                </ul>
+                <p>The program must run without any corrections or modifications of the runtime
+                    environment (<em>Java 8</em>) or source code! Create a jar-file named IR_P01.jar. It should
+                    process the input:</p>
+                <p><code>java -jar IR_P01.jar [path to document folder] [path to index folder] [VS/OK] [query]</code>
+                </p>
+            </blockquote>
+            <br>
+            <h2>Results:</h2>
             <ul>
-                <li>Using Lucene, parse and index <em>HTML</em> documents that a given folder and its
-                    subfolders contain. List all parsed files.</li>
-                <li>Consider the English language and use a stemmer for it (e.g. Porter Stemmer).</li>
-                <li>Select an available search index or create a new one (if not available in the chosen
-                    directory).</li>
-                <li>Make possible for the user to choose the ranking model, Vector Space Model (<em>VS</em>)
-                    or Okapi BM25 (<em>OK</em>).</li>
-                <li>Print a ranked list of relevant articles given a search query. The output should
-                    contain 10 most relevant documents with their rank, title and summary, relevance
-                    score and path.</li>
-                <li>Search multiple fields concurrently (<em>multifield search</em>): not only search the
-                    document's text (body tag), but also its title.</li>
+                <li>Source code: <a href="https://github.com/a2135/ir/tree/main/src" target="_blank">github</a></li>
+                <li>Short report: <a
+                        href="https://www.dropbox.com/scl/fi/hoq0pjwchs7eszhetyfr5/ir_documentation.pdf?rlkey=35m1novyrfcovw2hgfk231h7n&dl=0">ir_documentation.pdf</a>
+                </li>
+                <li>jar-file: <a
+                        href="https://www.dropbox.com/scl/fi/ddi9nxzt2d722pvtqgjc8/IR_P01.jar?rlkey=7c4p6w904uab13bl4bsr1qh01&dl=0">IR_P01.jar</a>
+                </li>
             </ul>
-            <p>The program must run without any corrections or modifications of the runtime
-                environment (<em>Java 8</em>) or source code! Create a jar-file named IR_P01.jar. It should
-                process the input:</p>
-            <p><code>java -jar IR_P01.jar [path to document folder] [path to index folder] [VS/OK] [query]</code></p>
-        </blockquote>
-    <br>
-    <h2>Results</h2>
-    <ul>
-        <li>Source code: <a href="https://github.com/a2135/ir/tree/main/src" target="_blank">github</a></li>
-        <li>Short report: <a
-                href="https://www.dropbox.com/scl/fi/hoq0pjwchs7eszhetyfr5/ir_documentation.pdf?rlkey=35m1novyrfcovw2hgfk231h7n&dl=0">ir_documentation.pdf</a></li>
-        <li>jar-file: <a href="https://www.dropbox.com/scl/fi/ddi9nxzt2d722pvtqgjc8/IR_P01.jar?rlkey=7c4p6w904uab13bl4bsr1qh01&dl=0">IR_P01.jar</a></li>
-    </ul>
         </main>
 </body>
 
